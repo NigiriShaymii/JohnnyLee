@@ -1,4 +1,4 @@
-@import url("<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">")
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 * {
 margin: 0;
@@ -9,19 +9,22 @@ body {
 width: 100%;
 height: 100%;
 margin:0;
-background-color:#e2edff;
-font-family: 'Montserrat', sans-serif;
+background: linear-gradient(to bottom, #8c99ff, rgba(255,0,0,0));
+background-repeat: no-repeat;
+font-family: 'Amatic SC', cursive;
 }
 
 h2 {
 font-size: 50px;
 padding: 50px;
+text-align: center;
 }
+
 
 a {
 padding: 20px;
 text-decoration: none;
-font-size:20px;
+font-size:35px;
 color: black;
 }
 
@@ -52,6 +55,7 @@ padding: 10px;
 transition: color 0.15s ease-in;
 }
 
+/* Navigation shifts to column when window width is at most 700px width */
 @media (max-width: 700px) {
   nav ul{   
     flex-direction: column;
@@ -70,6 +74,8 @@ border-style: none;
 text-align: center;
 cursor: pointer;
 }
+
+/* Home.html */
 
 .curious {
 text-align: center;
@@ -93,28 +99,29 @@ text-align: center;
 }
 
 .d1 {
-background-image: url();
+background-image: url(../media/ShayProfile.png);
 transition: background-image 0.15s ease-in;
 }
 
 .d2 {
-background-image: url();
+
+background-image: url(../media/TentIn.png);
 transition: background-image 0.15s ease-in;
 }
 
 .d3 {
-background-image: url();
+background-image: url(../media/Untitled_Titled.png);
 transition: background-image 0.15s ease-in;
 }
 
 .d4 {
 grid-area: wide;
-background-image: url();
+background-image: url(../media/Cat.png);
 transition: background-image 0.15s ease-in;
 }
 
 .d5 {
-background-image: url();
+background-image: url(../media/Combination_Superpower.png);
 transition: background-image 0.15s ease-in;
 }
 
@@ -126,4 +133,383 @@ transition: background-image 0.15s ease-in;
 	padding: 20px;
     background-size: 80px 80px;
 
+}
+
+/* About.html */
+
+.artist, .a4 {
+	background: rgba(255, 255, 255, 0.75);
+	padding: 40px;
+}
+
+.artistStatement {
+display: grid;
+grid-template-areas:
+"name . "
+". state";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 100px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+
+}
+
+.a1 {
+	grid-area: name;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.a4 {
+	grid-area: state;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Gallery.html */
+
+
+img {
+	width: 100%;
+	height: auto;
+	min-width: 400px;
+}
+
+
+
+.art a {
+	padding: 2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.art p h3{
+	padding: 20px;
+	min-width: 200px;
+}
+
+.coastal {
+display: grid;
+grid-template-areas:
+"coast coastal";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.c1 {
+	grid-area: coast;
+
+}
+
+.c2 {
+	grid-area: coastal;
+}
+
+.wolf {
+display: grid;
+grid-template-areas:
+"woof wof";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.w1 {
+	grid-area: woof;
+
+}
+
+.w2 {
+	grid-area: wof;
+}
+
+.bun {
+display: grid;
+grid-template-areas:
+"bun bunn";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.b1 {
+	grid-area: bun;
+
+}
+
+.b2 {
+	grid-area: bunn;
+}
+
+.cabbit {
+display: grid;
+grid-template-areas:
+"cabb cabbage";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.ca1 {
+	grid-area: cabb;
+
+}
+
+.ca2 {
+	grid-area: cabbage;
+}
+
+.outdoor{
+display: grid;
+grid-template-areas:
+"out outs"
+"door outs";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.o1 {
+	grid-area: out;
+
+}
+
+.o2 {
+	grid-area: door;
+}
+
+.o3 {
+	grid-area: outs;
+}
+
+
+.player{
+display: grid;
+grid-template-areas:
+"play"
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.p1 {
+	grid-area: play;
+
+}
+
+
+.spiral{
+display: grid;
+grid-template-areas:
+"spi twist"
+"whirl twist"
+"spin twist";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.sp1 {
+	grid-area: spi;
+
+}
+
+.sp2 {
+	grid-area: whirl;
+}
+
+.sp3 {
+	grid-area: spin;
+}
+
+.sp4 {
+	grid-area: twist;
+}
+
+
+.untitled{
+display: grid;
+grid-template-areas:
+"un title";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.u1 {
+	grid-area: un;
+
+}
+
+.u2 {
+	grid-area: title;
+}
+
+.tom{
+display: grid;
+grid-template-areas:
+"tomtom tommy";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.t1 {
+	grid-area: tomtom;
+
+}
+
+.t2 {
+	grid-area: tommy;
+}
+
+
+.super{
+display: grid;
+grid-template-areas:
+"soup per";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.s1 {
+	grid-area: soup;
+
+}
+
+.s2 {
+	grid-area: per;
+}
+
+.tranquil{
+display: grid;
+grid-template-areas:
+"tran";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.tr1 {
+	grid-area: tran;
+
+}
+
+.cat{
+display: grid;
+grid-template-areas:
+"kitty kit";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.cat1 {
+	grid-area: kitty;
+
+}
+
+.cat2 {
+	grid-area: kit;
+}
+
+.eternal{
+display: grid;
+grid-template-areas:
+"ferocious beasts";
+grid-gap: 50px 50px;
+margin: 0 auto;
+padding: 50px 50px;
+max-width: 1000px;
+text-align: center;
+border: none;
+color: black;
+border-style: none;
+text-align: center;
+}
+
+.e1 {
+	grid-area: ferocious;
+
+}
+
+.e2 {
+	grid-area: beasts;
 }
